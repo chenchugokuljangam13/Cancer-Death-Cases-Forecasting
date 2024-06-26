@@ -13,8 +13,6 @@ Cancer is a leading cause of death in India and worldwide. This research predict
 7. [Model Evaluation](#model-evaluation)
 8. [Results](#results)
 9. [Usage](#usage)
-10. [Contributing](#contributing)
-11. [License](#license)
 
 
 
