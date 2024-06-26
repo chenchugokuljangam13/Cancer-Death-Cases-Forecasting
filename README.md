@@ -4,15 +4,15 @@
 Cancer is a leading cause of death in India and worldwide. This research predicts cancer death Case in India and worldwide using supervised machine learning on data from 1990 to 2017, categorized by age, gender, and region from the Global Burden of Disease Study. Our goal is to provide long-term predictions to help the health department develop strategies to combat cancer.
 
 ## Table of Content
-1. [Introduction](#introduction)
-2. [Data Description](#data-description)
-3. [Project Structure](#project-structure)
-4. [Installation](#installation)
-5. [Data Preprocessing](#data-preprocessing)
-6. [Model Training](#model-training)
-7. [Model Evaluation](#model-evaluation)
-8. [Results](#results)
-9. [Usage](#usage)
+1. [Introduction](#Introduction)
+2. [Data Description](#Data-description)
+3. [Project Structure](#Project-structure)
+4. [Installation](#Installation)
+5. [Data Preprocessing](#Data-preprocessing)
+6. [Model Training](#Model-training)
+7. [Model Evaluation](#Model-evaluation)
+8. [Results](#Results)
+9. [Usage](#Usage)
 
 
 
@@ -30,7 +30,7 @@ We use cancer death case data from the Global Burden of Disease Study, covering 
 - Type of cancer
 - Count of cases
 
-## project structure
+## Project structure
 - Home
 - Admin
   - user details
