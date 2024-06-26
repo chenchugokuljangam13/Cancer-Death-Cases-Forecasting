@@ -1,0 +1,101 @@
+{% extends 'users/userbase.html'%}
+{%load static%}
+{%block contents%}
+<!--<style>-->
+<!--    .bg-light{-->
+<!--    margin-top: -500px;-->
+<!--    background: #65cd00;-->
+<!--    padding:10px;-->
+<!--    }-->
+
+<!--</style>-->
+<section id="" class="page-section page">
+    <div class="container text-center">
+        <div class="heading">
+            <h2>METHODOLOGY</h2>
+            <p>Modeling is the connection between a dependent variable and a set of independent variables.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="portfolio">
+                    <form action="{%url 'UserRegressions'%}" method="post">
+                        {% csrf_token %}
+                        select Country:
+                        <select name="countryCode" id="" required>
+                            <option>---Select Country Code---</option>
+                            {% for i in countryCode%}
+                            <option value="{{i}}">{{i}}</option>
+                            {%endfor%}
+                        </select>
+                        <select name="cancerType" id="" required>
+                            <option>---Select Cancer type---</option>
+                            {% for i in cancerType%}
+                            <option value="{{i}}">{{i}}</option>
+                            {%endfor%}
+                        </select>
+                        <input type="submit" value="submit">
+                    </form>
+                    <div id="#top"></div>
+                    <div id="#top"></div>
+                    <br>
+                    <br>
+                    <center>
+                        <table border="2">
+                            <thead>
+                            <tr>
+                                <td>S.No</td>
+                                <td>Algorithm Name</td>
+                                <td>MAE</td>
+                                <td>MSE</td>
+                                <td>EVS</td>
+                                <td>R2 Score</td>
+                                <td>RMSE</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Logistic Regression</td>
+                                <td>{{lr_dict.lr_mae}}</td>
+                                <td>{{lr_dict.lr_mse}}</td>
+                                <td>{{lr_dict.lr_evs}}</td>
+                                <td>{{lr_dict.lr_r2}}</td>
+                                <td>{{lr_dict.lr_rmse}}</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Decison Tree Regression</td>
+                                <td>{{dt_dict.dt_mae}}</td>
+                                <td>{{dt_dict.dt_mse}}</td>
+                                <td>{{dt_dict.dt_evs}}</td>
+                                <td>{{dt_dict.dt_r2}}</td>
+                                <td>{{dt_dict.dt_rmse}}</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Random Forest</td>
+                                <td>{{rf_dict.rf_mae}}</td>
+                                <td>{{rf_dict.rf_mse}}</td>
+                                <td>{{rf_dict.rf_evs}}</td>
+                                <td>{{rf_dict.rf_r2}}</td>
+                                <td>{{rf_dict.rf_rmse}}</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Polynomial Regression</td>
+                                <td>{{pf_dict.pf_mae}}</td>
+                                <td>{{pf_dict.pf_mse}}</td>
+                                <td>{{pf_dict.pf_evs}}</td>
+                                <td>{{pf_dict.pf_r2}}</td>
+                                <td>{{pf_dict.pf_rmse}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{%endblock%}

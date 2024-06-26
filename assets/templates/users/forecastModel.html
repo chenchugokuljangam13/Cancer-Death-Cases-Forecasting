@@ -1,0 +1,50 @@
+{% extends 'users/userbase.html'%}
+{%load static%}
+{%block contents%}
+<!--<style>-->
+<!--    .bg-light{-->
+<!--    margin-top: -500px;-->
+<!--    background: #65cd00;-->
+<!--    padding:10px;-->
+<!--    }-->
+
+<!--</style>-->
+<section id="" class="page-section page">
+    <div class="container text-center">
+        <div class="heading">
+            <h2>METHODOLOGY</h2>
+            <p>Modeling is the connection between a dependent variable and a set of independent variables.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="portfolio">
+                    <form action="{%url 'ForecastAnalysis'%}" method="post">
+                        {% csrf_token %}
+                        select Country:
+                        <select name="countryCode" id="" required>
+                            <option>---Select Country Code---</option>
+                            {% for i in countryCode%}
+                            <option value="{{i}}">{{i}}</option>
+                            {%endfor%}
+                        </select>
+                        <select name="cancerType" id="" required>
+                            <option>---Select Cancer type---</option>
+                            {% for i in cancerType%}
+                            <option value="{{i}}">{{i}}</option>
+                            {%endfor%}
+                        </select>
+                        <input type="submit" value="submit">
+                    </form>
+                    <br>
+                    <br>
+                    <h2>Forecast Results</h2>
+                    <center>
+                        {{data|safe}}
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{%endblock%}

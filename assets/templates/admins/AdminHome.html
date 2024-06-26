@@ -1,0 +1,107 @@
+{% extends 'admins/adminbase.html'%}
+{%load static%}
+{%block contents%}
+<!--<style>-->
+<!--    .bg-light{-->
+<!--    margin-top: -500px;-->
+<!--    background: #65cd00;-->
+<!--    padding:10px;-->
+<!--    }-->
+
+<!--</style>-->
+<section id="team" class="page-section">
+    <div class="container">
+        <div class="heading text-center">
+            <!-- Heading -->
+            <h2>Regression Model</h2>
+            <p>
+                Modeling “the connection between a dependent variable
+                and a set of independent variables is a common use of
+                regression analysis, a popular statistical technique. Its purpose
+                is to foretell a continuous numeric value, such as a future
+                selling price or volume of a product. Linear regression,
+                decision tree regression, random forest regression, and
+                polynomial regression are just a few examples of the many
+                kinds of regression models” available.
+            </p>
+            <p>
+                Linear “regression is the most common and easiest to use
+                regression technique. It presupposes that the connection
+                between the explanatory and explanatory variables is linear.
+                That is, if you alter the independent variable, the dependent
+                variable will shift in kind. The aim of linear regression is to
+                find the smallest possible deviation between the anticipated
+                and observed values by modelling the connection between
+                them using a straight” line.
+            </p>
+            <p>
+                The “use of decision trees to do regression analysis is
+                known as non-parametric decision tree regression. A choice
+                may be reached concerning the dependent variable by further
+                subdividing the data depending on the independent factors.
+                The decision tree is constructed by iteratively breaking the
+                data into subsets according to a predetermined set of criteria designed to increase the homogeneity of
+                each subset. The final
+                product looks like a tree, with each leaf representing a value
+                for the dependent variable as predicted by the” model.
+            </p>
+        </div>
+        <!-- Team Member's Details -->
+        <div class="team-content">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <!-- Team Member -->
+                    <div class="team-member pDark">
+                        <!-- Image Hover Block -->
+                        <div class="member-img">
+                            <!-- Image  -->
+                            <img class="img-responsive" src="{%static 'images/photo-1.jpg'%}" alt=""></div>
+                        <!-- Member Details -->
+                        <h4>John Doe</h4>
+                        <!-- Designation -->
+                        <span class="pos">CEO</span></div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <!-- Team Member -->
+                    <div class="team-member pDark">
+                        <!-- Image Hover Block -->
+                        <div class="member-img">
+                            <!-- Image  -->
+                            <img class="img-responsive" src="{%static 'images/photo-2.jpg'%}" alt=""></div>
+                        <!-- Member Details -->
+                        <h4>Larry Doe</h4>
+                        <!-- Designation -->
+                        <span class="pos">Art Director</span></div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <!-- Team Member -->
+                    <div class="team-member pDark">
+                        <!-- Image Hover Block -->
+                        <div class="member-img">
+                            <!-- Image  -->
+                            <img class="img-responsive" src="{%static 'images/photo-3.jpg'%}" alt=""></div>
+                        <!-- Member Details -->
+                        <h4>Ranith Kays</h4>
+                        <!-- Designation -->
+                        <span class="pos">Manager</span></div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <!-- Team Member -->
+                    <div class="team-member pDark">
+                        <!-- Image Hover Block -->
+                        <div class="member-img">
+                            <!-- Image  -->
+                            <img class="img-responsive" src="{%static 'images/photo-4.jpg'%}" alt=""></div>
+                        <!-- Member Details -->
+                        <h4>Joan Ray</h4>
+                        <!-- Designation -->
+                        <span class="pos">Creative</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.container-->
+</section>
+
+
+{%endblock%}
