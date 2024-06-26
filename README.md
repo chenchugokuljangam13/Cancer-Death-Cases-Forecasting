@@ -3,7 +3,7 @@
 ## Project Overview
 Cancer is a leading cause of death in India and worldwide. This research predicts cancer death Case in India and worldwide using supervised machine learning on data from 1990 to 2017, categorized by age, gender, and region from the Global Burden of Disease Study. Our goal is to provide long-term predictions to help the health department develop strategies to combat cancer.
 
-## Table of Contents
+## Table of Content
 1. [Introduction](#introduction)
 2. [Data Description](#data-description)
 3. [Project Structure](#project-structure)
