@@ -43,3 +43,14 @@ We use cancer death case data from the Global Burden of Disease Study, covering 
 
 ## Installation
 - installing requirements.txt
+
+## Data Preprocessing
+- Imputing missing values
+- Normalizing and scaling features
+- Encoding categorical variables
+
+## Model Training
+- Splitting the data into training and test sets
+- Training each model on the training set
+- Saving the trained models
+  - XGBoost
