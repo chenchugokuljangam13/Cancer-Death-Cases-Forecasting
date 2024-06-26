@@ -29,3 +29,17 @@ We use cancer death case data from the Global Burden of Disease Study, covering 
 - Region
 - Type of cancer
 - Count of cases
+
+## pproject structure
+- Home
+- Admin
+  - user details
+- User
+  - DatasetView
+  - Ml
+  - Prediction
+- register
+  - registeration form
+
+## installation
+- installing requirements.txt
