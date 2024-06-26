@@ -30,7 +30,7 @@ We use cancer death case data from the Global Burden of Disease Study, covering 
 - Type of cancer
 - Count of cases
 
-## pproject structure
+## project structure
 - Home
 - Admin
   - user details
