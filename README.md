@@ -41,5 +41,5 @@ We use cancer death case data from the Global Burden of Disease Study, covering 
 - register
   - registeration form
 
-## installation
+## Installation
 - installing requirements.txt
