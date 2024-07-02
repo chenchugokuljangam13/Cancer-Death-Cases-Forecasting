@@ -42,7 +42,7 @@ We use cancer death case data from the Global Burden of Disease Study, covering 
 - Admin Login
   - User details
 - Register
-  - Registration form
+  - Registeration form
 
 ## Installation
 - **Install Django**
@@ -54,7 +54,7 @@ We use cancer death case data from the Global Burden of Disease Study, covering 
   - `py manage.py runserver`
     - Use the above command to start the server.
 
-## Dataset veiw
+## Dataset view
 - Data Collection
 - filter data
   - filter data based on the country code, rename columns, drop unnecessary columns, and convert the DataFrame to HTML.
@@ -86,3 +86,19 @@ By using the machine learning and regression models we can forecast the future p
 - Perform future predictions on the data, format the results, and convert the DataFrame to HTML.
 
 ## results
+- Home
+![Home page](media/cancerhome.png)
+- User
+![User login page](media/canceruserlogin.png)
+![user home page](media/canceruserhome.png)
+- Data set view
+![Data set view](media/cancerdataset.png)
+- Regression
+![Regression](media/cancerregression.png)
+![Forecasting](media/cancerforecaste.png)
+- Admin
+![Admin Login page](media/canceradminlogin.png)
+![amin home page](media/canceradminhome.png)
+![Admin user details page](media/canceruserdetails.png)
+- User Registerationion
+![User registeration](media/canceruserregistration.png)
