@@ -168,8 +168,7 @@ def ForecastAnalysis(request):
         #     X_X.append([i])
         # for j in y:
         #     y_y.append([j])
-        myDf = pd.DataFrame(list(zip(X, y)),
-                            columns=['year', 'val'])
+        myDf = pd.DataFrame(list(zip(X, y)),columns=['year', 'val'])
 
         from .utility.predections import FuturePredImpl
         fut = FuturePredImpl()
