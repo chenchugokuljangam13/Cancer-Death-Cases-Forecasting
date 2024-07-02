@@ -85,7 +85,7 @@ By using the machine learning and regression models we can forecast the future p
 - Read the CSV file, filter data based on the country code, and prepare the data for forecasting.
 - Perform future predictions on the data, format the results, and convert the DataFrame to HTML.
 
-## results
+## Results
 - Home
 ![Home page](media/cancerhome.png)
 - User
